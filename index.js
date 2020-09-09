@@ -11,17 +11,14 @@ let votingAge
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+let weather = "forecast";
+let feeling = "happy";
 
-// let fruit1 = "Apple";
-// let isTasty = "Yum";
+if(feeling = "happy"){
+    weather = "sunny";
+}
 
-// if(isTasty === "Yum"){
-//   fruit1 = "Delicious";
-// }else {
-//   fruit1 = "Gross";
-// }
-
-//console.log(fruit1);
+console.log(weather);
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
