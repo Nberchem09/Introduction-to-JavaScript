@@ -94,6 +94,17 @@ console.log (feeder(1, 15));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+for (let i = 0; i<5; i++){
+
+var rockPapScis = Math.round(Math.random())
+    if (rockPapScis === 1) {
+        console.log ("win");
+    }
+    if (rockPapScis === 0) {
+        console.log ("lose");
+    }
+   
+}
   
   
 
@@ -125,10 +136,10 @@ console.log (cm(2))
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
-function annoyingSong (bottles) {
-    for(let bottles = 99; bottles >= 0; bottles--) {
+// function annoyingSong (bottles) {
+//     for(let bottles = 99; bottles >= 0; bottles--) {
     
-}
+// }
 
 
 
