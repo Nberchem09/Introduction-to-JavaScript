@@ -11,14 +11,6 @@ let votingAge
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-let feels= emotion;
-let weather= sunny;
-
-if(weather === sunny){
-    feels = happy;
-} else {
-    feels = sad;
-}
 
 // let fruit1 = "Apple";
 // let isTasty = "Yum";
@@ -29,7 +21,7 @@ if(weather === sunny){
 //   fruit1 = "Gross";
 // }
 
-console.log(fruit1);
+//console.log(fruit1);
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
@@ -54,12 +46,12 @@ multiply(a,b);
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-// let age= 29
-// function dogyears(age,"7"){
-//     console.log(age*7)
-// }
-// dogyears(age,7)
 
+function dogyears(human,) {
+    if(human > 0)
+        return human * 7
+}
+console.log(dogyears (29));
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
 //takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) and returns the number of pounds of raw food to feed in a day.
@@ -78,9 +70,25 @@ multiply(a,b);
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+function feeder(age, weight) {
+    if(age >= 1 && weight <= 5) {
+        return weight * .05
+    }else if (age >=1 && weight <=10) {
+        return weight * .04
+    }else if (age >=1 && weight <=15) {
+        return weight * .03
+    }else if (age >=1 && weight >15) {
+        return weight * .02
+    }else if (age >= .167 && age < .33) {
+        return weight * .10
+    }else if (age >= .33 && age < .583) {
+        return weight * .05
+    }else if (age >= .583 && age <1) {
+        return weight * .04
+    }
+}
 
-
-
+console.log (feeder(1, 15));
 
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
