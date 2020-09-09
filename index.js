@@ -136,10 +136,11 @@ console.log (cm(2))
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
-// function annoyingSong (bottles) {
-//     for(let bottles = 99; bottles >= 0; bottles--) {
-    
-// }
+function annoyingSong (bottles) {
+    for(let bottles = 99; bottles > 0; bottles--) {
+        console.log (bottles);
+    }
+}
 
 
 
@@ -183,8 +184,4 @@ function grades(percent){
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
-
-
-
-
 
