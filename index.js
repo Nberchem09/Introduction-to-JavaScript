@@ -114,7 +114,12 @@ console.log (miles(5));
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+function cm(ft){
+    if (ft > 0) {
+        return ft * 30.48
+    }
+}
+console.log (cm(2))
 
 
 
@@ -123,6 +128,13 @@ console.log (miles(5));
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+function annoyingSong (bottles) {
+    for(let bottles = 99; bottles >= 0; bottles--) {
+        console.log(annoyingSong (bottles));
+    }
+}
+
+
 
 
 
@@ -136,8 +148,20 @@ console.log (miles(5));
 //60s should be D 
 //and anything below 60 should be F
   
-
-  
+function grades(percent){
+    if (percent >= 90) {
+        return "A"
+    }else if (percent >=80) {
+        return "B"
+    }else if (percent >=70) {
+        return "C"
+    }else if (percent >=60) {
+        return "D" 
+    }else if (percent <60) {
+        return "F"
+    }
+}
+  console.log(grades(83));
   
 
 /************************************************************** Stretch **************************************************************/
